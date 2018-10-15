@@ -1,0 +1,17 @@
+E
+<T>
+a,+,(,)
+<N>
+E,G,T,H,F
+<P>
+E
+TG
+G
++TG,Ω
+T
+FH
+H
+*FH,Ω
+F
+a,(E)
+

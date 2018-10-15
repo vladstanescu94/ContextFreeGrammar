@@ -1,0 +1,10 @@
+aA
+<T>
+a,b
+<N>
+A,B
+<P>
+A
+bB,aA
+B
+b,bB

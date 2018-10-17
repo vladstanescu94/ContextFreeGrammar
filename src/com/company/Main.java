@@ -1,6 +1,9 @@
 package com.company;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +11,7 @@ public class Main {
         Grammar gr = new Grammar();
         //set input file
         gr.readInput("input2.txt");
+
         //generate string
         System.out.println("Start is : " + gr.Start);
         System.out.println("Terminal is : " + gr.T);

@@ -84,7 +84,7 @@ public class Grammar {
             int indexOfRule = N.indexOf(Character.toString(Start.charAt(indexN)));
             int sizeOfRule = P.get(indexOfRule).size();
             seed =r.nextInt(sizeOfRule);
-            if(P.get(indexOfRule).get(seed).equals("Ω")){
+            if(P.get(indexOfRule).get(seed).equals("λ")){
                 Start = Start.replace(indexN,indexN+1, "");
             } else {
                 Start = Start.replace(indexN, indexN + 1, P.get(indexOfRule).get(seed));

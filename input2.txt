@@ -7,11 +7,11 @@ E,G,T,H,F
 E
 TG
 G
-+TG,Ω
++TG,λ
 T
 FH
 H
-*FH,Ω
+*FH,λ
 F
 a,(E)
 

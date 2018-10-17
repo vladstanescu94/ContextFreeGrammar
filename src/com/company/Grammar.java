@@ -76,14 +76,6 @@ public class Grammar {
         }
         return index;
     }
-    private StringBuffer clearLambda(StringBuffer S){
-        for (int i = 0 ; i< S.length(); i ++){
-            if (S.charAt(i) == 'Ω'){
-                S = S.deleteCharAt(i);
-            }
-        }
-        return S;
-    }
 
     public StringBuffer generate(){
         int seed;
@@ -92,8 +84,11 @@ public class Grammar {
             int indexOfRule = N.indexOf(Character.toString(Start.charAt(indexN)));
             int sizeOfRule = P.get(indexOfRule).size();
             seed =r.nextInt(sizeOfRule);
-            Start = Start.replace(indexN,indexN+1, P.get(indexOfRule).get(seed));
-            Start = clearLambda(Start);
+            if(P.get(indexOfRule).get(seed).equals("Ω")){
+                Start = Start.replace(indexN,indexN+1, "");
+            } else {
+                Start = Start.replace(indexN, indexN + 1, P.get(indexOfRule).get(seed));
+            }
             System.out.println(Start);
         }
         return Start;
